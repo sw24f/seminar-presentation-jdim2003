@@ -1,0 +1,10 @@
+## 4:00 pm AUST 247
+Jesse DiMarzo
+Statistical tests, P values, confidence intervals, and power: a guide
+to misinterpretations
+
+In the chosen text, author Sander Greenland et al. highlights the pervasive misinterpretations of fundamental statistical concepts such as P values, confidence intervals, and statistical power, which have led to widespread misunderstandings and mistaken conclusions in scientific research. The authors first discuss the need for improved understanding and teaching of these concepts, and give a critical overview of the topics, and their correct interpretations. The paper then shifts its focus to discussing 25 specific misinterpretations related to P values, confidence intervals, and statistical power, shedding light to the confusing nature of statistical notation, and the often incorrect implications given. To avoid unsupported conclusions about the presence or absence of relationships, these 25 examples provide a thorough correction to the misunderstandings described. In the final section, Greenland et al. emphasizes that a statistical model extends beyond mathematical notation, exposing the risks of analysis and reporting bias by overlooking broader assumptions inherent to the model. This review encourages viewers to interpret research within the broader context of publication practices and selective reporting, aiming to create a more accurate and reliable statistical understanding in the scientific community. 
+
+
+Greenland, Sander et al. “Statistical tests, P values, confidence intervals, and power: a guide to misinterpretations.” European journal of epidemiology vol. 31,4 (2016): 337-50.
+https://doi.org/10.1007/s10654-016-0149-3

@@ -1,0 +1,210 @@
+\documentclass[aspectratio=169, 12pt]{beamer}
+ 
+\usepackage[utf8]{inputenc}
+\usepackage{natbib, url}
+\usepackage{enumerate, amsmath, amssymb, amsthm}
+\usepackage{ragged2e} % make it justified
+\justifying
+
+% \usepackage{enumitem}
+% \setlist{itemsep = 0pt, topsep = 1pt, leftmargin = 0.6mm}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks, citecolor=blue, urlcolor=blue}
+\usepackage{booktabs}
+\usepackage{graphicx}
+
+
+%\mode<presentation>{}
+%\usepackage{beamerthemesplit} 
+
+\setbeamertemplate{footline}[frame number]
+%\setbeamertemplate{headline}{}
+ 
+ 
+%Information to be included in the title page:
+\title{Statistical tests, P values, confidence intervals, and power: a guide
+to misinterpretations}
+
+\author{Jesse DiMarzo}
+\date{}
+ 
+\begin{document}
+ 
+\frame{\titlepage}
+
+\section{Introduction}
+\begin{frame}{About the Authors}
+\begin{itemize}
+    \item \textbf{Sander Greenland}: Lead author, Professor of Epidemiology and Statistics, UCLA.
+    \item \textbf{Stephen J. Senn}: Competence Center for Methodology and Statistics, Luxembourg Institute of Health.
+    \item \textbf{Kenneth J. Rothman}: Research Triangle Institute
+    \item \textbf{John B. Carlin}: Clinical Epidemiology and Bio statistics Unit, University of Melbourne.
+    \item \textbf{Charles Poole}: Department of Epidemiology, UNC Chapel Hill.
+    \item \textbf{Steven N. Goodman}:  Innovation Center, Departments of Medicine
+and of Health Research and Policy, Stanford University.
+    \item \textbf{Douglas G. Altman}: Centre for Statistics in Medicine, University of Oxford.
+\end{itemize}
+\end{frame}
+ 
+
+\begin{frame}{Importance of Statistical Literacy}
+\begin{itemize}
+    \item Misinterpretations in statistical results remain widespread.
+    \vspace{0.5cm}
+    \item Critical for improving scientific rigor and communication. 
+    \vspace{0.5cm}
+    \item Paper discusses 25 common statistical misinterpretations.
+\end{itemize}
+\end{frame}
+
+
+
+
+\begin{frame}{The Contextual Importance of Statistics}
+\begin{itemize}
+    \item Journals have taken drastic actions (e.g., banning significance testing).
+    \vspace{0.5cm}
+    \item Focus on educating and teaching concepts like P-values and confidence intervals, and the assumptions surrounding their models.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Common Misinterpretations of Single P-values} % 1-2
+\begin{itemize}
+    \item P-value is the probability that the hypothesis is true.
+    \vspace{0.5cm}
+    \item The P-value is the probability that chance produced the observed association.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Misunderstanding Significance Results} % 3-5
+\begin{itemize}
+    \item Significant P-value means that the test hypothesis is false.
+    \vspace{0.5cm}
+    \item Non significant P-value means that the test hypothesis is true.
+    \vspace{0.5cm}
+    \item Large P-value is evidence in favor of the test hypothesis.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Signifiance and Null Hypotheses} % 6-8
+\begin{itemize}
+    \item A P-value greater than 0.05 means no effect was observed.
+    \vspace{0.5cm}
+    \item Statistical significance indicates substantive importance.
+    \vspace{0.5cm}
+    \item Lack of significance indicates a small effect size. 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Understanding Percentages in Context} % 9 - 11
+\begin{itemize}
+    \item The P-value is the chance of the data occurring if the test hypothesis is true.
+    \vspace{0.5cm}
+    \item If you reject the test hypothesis because \( P \leq 0.05 \), the chance you are in error is 5\%.
+    \vspace{0.5cm}
+    \item \( P = 0.05 \) and \( P \leq 0.05 \) mean the same thing.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Final Misconceptions for P-values} % 12 - 14
+\begin{itemize}
+    \item P-values are properly reported as inequalities.
+    \vspace{0.5cm}
+    \item Statistical significance is a property of the phenomenon being studied.
+    \vspace{0.5cm}
+    \item One should always use two-sided P-values.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Controversial Interpretations of P-values}
+\begin{itemize}
+    \item P-values have been argued to overstate evidence against test hypotheses when compared to likelihood ratios or Bayes factors.
+    \vspace{0.5cm}
+    \item Many statisticians dispute the use of these quantities as gold standards, asserting that P-values gauge error rates in decisions.
+    \vspace{0.5cm}
+    \item Controversies highlight differences in philosophical approaches to statistical interpretation.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Comparisons and Synthesis of Results} % 15 - 18
+\begin{itemize}
+    \item Lack of significant results across studies means no effect.
+    \vspace{0.5cm}
+    \item Conflicting P-values across populations indicate disagreement.
+    \vspace{0.5cm}
+    \item Identical P-values across populations indicate results are in agreement.
+    \vspace{0.5cm}
+    \item A small P-value implies replication will yield similar results.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Confidence Intervals} % 19 - 20, 22
+\begin{itemize}
+    \item A 95\% confidence interval has a 95\% chance of containing the true effect size.
+    \vspace{0.5cm}
+    \item An effect size outside the 95\% confidence interval has been excluded by the data.
+    \vspace{0.5cm}
+    \item A 95\% confidence interval predicts that 95\% of future studies will fall inside the interval.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Comparison of Confidence Intervals} % 21, 23
+\begin{itemize}
+    \item If two confidence intervals overlap, the difference between two estimates is not significant.
+    \vspace{0.5cm}
+    \item A 95\% confidence interval excluding the null value(0) is more precise than one that doesn't
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Statistical Power} % 24, 25
+\begin{itemize}
+    \item If the power of your test is 90\%, the chance you are in error is 10\%.
+    \vspace{0.5cm}
+    \item A non significant result with high power supports the null hypothesis over alternatives.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{A Statistical Model Beyond Greek Letters}
+\begin{itemize}
+    \item Underlying assumptions within the model
+    \vspace{0.5cm}
+    \item Analysis and reporting bias, and their impacts
+    \vspace{0.5cm}
+    \item Contextual interpretation
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Conclusion: Reflecting on Statistical Testing}
+\begin{itemize}
+    \item Statistical tests were created to account for random variability as a source of error.
+    \vspace{0.5cm}
+    \item Founders of statistical testing emphasized tests as tools, not as final decisions.
+    \vspace{0.5cm}
+    \item Some misinterpretations are harmless in tightly controlled experiments.
+    \vspace{0.5cm}
+    \item Shifting from hypothesis testing to estimation
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Key Takeaways and Final Statements}
+\begin{itemize}
+    \item Focus on effect sizes, confidence limits, and precise P-values
+    \item Critically examine known and hidden assumptions behind analysis and presentation
+    \item Statistically non significant results do not confirm the test hypothesis
+    \item Use intervals to evaluate hypotheses, but recognize they represent best-case scenarios
+    \item Analyze multiple studied carefully, addressing biases, and looking beyond statistical significance
+    \item Avoid framing conclusions based just on hypothesis probabilities, and statistical tests
+    \item Be thorough with the study's design, analysis choices, results presented
+\end{itemize}
+\end{frame}
+
+\begin{frame}[plain]
+    \begin{center}
+        {\Huge \textbf{\textcolor{structure}{Any Questions?}}}
+    \end{center}
+\end{frame}
+
+
+\end{document}
